@@ -1,0 +1,4 @@
+pdfkit==1.0.0
+smtplib  # smtplib is part of the Python standard library, so no need to include it.
+weasyprint==55.0
+flask
