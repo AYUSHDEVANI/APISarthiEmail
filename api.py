@@ -52,7 +52,7 @@ body {{
 }}
 
 .left-image, .right-image {{
-    width: 30%;
+    width: 50%;
     height: auto;
 }}
 
@@ -198,12 +198,12 @@ hr {{
         <img src="https://drive.google.com/uc?export=view&id=1CeaLTOj4EELiB_3koY6mIZKmKQieBYRB" alt="Header Image">
     </div>
 
-    <div class="container">
-        <div class="left-image">
-            <img src="https://drive.google.com/uc?export=view&id=1j5yc-7iV2vyhXlBx14JIkkjhiOq1VaoV" alt="Left Image">
-        </div>
+    # <div class="container">
+    #     <div class="left-image">
+    #         <img src="https://drive.google.com/uc?export=view&id=1j5yc-7iV2vyhXlBx14JIkkjhiOq1VaoV" alt="Left Image">
+    #     </div>
         
-        <div class="content">
+        
             <h1><strong>CONTRACT FARMING AGREEMENT</strong></h1>
             <h3>Contract ID: {contract_data["contract_id"]}</h3>
             <h2><strong>Between</strong></h2>
@@ -211,11 +211,11 @@ hr {{
             <h2><strong>And</strong></h2>
             <h2><strong>{contract_data["seller_name"]}</strong></h2>
             <!-- Add the rest of your content here as needed -->
-        </div>
+    
         
-        <div class="right-image">
-            <img src="https://drive.google.com/uc?export=view&id=1dtD14envEdUmWOKaYA-lhREhdgsyc7S-" alt="Right Image">
-        </div>
+        # <div class="right-image">
+        #     <img src="https://drive.google.com/uc?export=view&id=1dtD14envEdUmWOKaYA-lhREhdgsyc7S-" alt="Right Image">
+        # </div>
     </div>
     
     <br><br>
