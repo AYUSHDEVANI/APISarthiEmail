@@ -43,40 +43,9 @@ body {{
     margin-bottom: 20px;
 }}
 
-.container {{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-}}
 
-.left-image, .right-image {{
-    width: 50%;
-    height: auto;
-}}
 
-.left-image img, .right-image img {{
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}}
 
-/* Responsive Design: Stack images vertically on smaller screens */
-@media screen and (max-width: 768px) {{
-    .container {{
-        flex-direction: column; /* Stack the content vertically */
-    }}
-
-    .left-image, .right-image {{
-        width: 80%; 
-        margin-bottom: 20px;
-    }}
-
-    .content {{
-        width: 80%;
-    }}
-}}
 
 h1, h2, h3, p {{
     color: #333;
