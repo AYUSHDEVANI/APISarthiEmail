@@ -152,7 +152,7 @@ hr {{
 <body>
        <!-- Add the header image at the start -->
     <div class="header-image">
-        <img src="https://drive.google.com/file/d/1dtD14envEdUmWOKaYA-lhREhdgsyc7S-/view?usp=sharing" alt="Header Image">
+        <img src="https://drive.google.com/uc?export=view&id=1dtD14envEdUmWOKaYA-lhREhdgsyc7S-" alt="Header Image">
     </div>
 
     <div class="container">
