@@ -157,7 +157,7 @@ hr {{
 
     <div class="container">
         <div class="left-image">
-            <img src="Images/left-image.png" alt="Left Image">
+            <img src="{"Images/left-image.png"}" alt="Left Image">
         </div>
         
         <div class="content">
