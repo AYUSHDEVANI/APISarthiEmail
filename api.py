@@ -1,12 +1,13 @@
 import abc_1
 from flask import Flask, request, jsonify
 import os
-import pdfkit  # Install using `pip install pdfkit`
+
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
+from weasyprint import HTML
 
 app = Flask(__name__)
 
@@ -450,7 +451,8 @@ hr {{
     """
 
     # Convert the HTML to PDF
-    pdfkit.from_string(html_content, output_path)
+    HTML(string=html_content).write_pdf(output_path)
+    # pdfkit.from_string(html_content, output_path)
     print(f"Contract PDF generated at {output_path}")
 
 # Function to send the contract via email
