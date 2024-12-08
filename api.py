@@ -11,7 +11,7 @@ from weasyprint import HTML
 
 app = Flask(__name__)
 
-stamp_image = "Images/stamp.jpg"
+stamp_image = "Images\left-image.png"
 left_image = "Images/left-image.png"
 right_image = "Images/right-image.png"
 
