@@ -188,12 +188,12 @@ hr {{
 
     <!-- Add the header image at the start -->
     <div class="header-image">
-        <img src="stamp.jpg" alt="Header Image">
+        <img src="{{stamp.jpg}}" alt="Header Image">
     </div>
 
     <div class="container">
         <div class="left-image">
-            <img src="left-image.png" alt="Left Image">
+            <img src="{{left-image.png}}" alt="Left Image">
         </div>
         
         <div class="content">
@@ -207,7 +207,7 @@ hr {{
         </div>
         
         <div class="right-image">
-            <img src="right-image.png" alt="Right Image">
+            <img src="{{right-image.png}}" alt="Right Image">
         </div>
     </div>
     
