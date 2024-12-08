@@ -7,7 +7,9 @@ from email.mime.base import MIMEBase
 from email import encoders
 from weasyprint import HTML
 
-C
+stamp_image = "stamp.jpg"
+left_image = "left-image.png"
+right_image = "right-image.png"
 
 # Function to generate the contract as a PDF
 def generate_contract_pdf(contract_data, output_path):
@@ -189,13 +191,13 @@ hr {{
 <body>
 
     <!-- Add the header image at the start -->
-    <div class="header-image">
-        <img src="{stamp_image}" alt="Header Image">
-    </div>
 
-    <div class="container">
+      <div class="header-image">
+        <img src="https://drive.google.com/uc?export=view&id=1CeaLTOj4EELiB_3koY6mIZKmKQieBYRB" alt="Header Image">
+    </div>
+   <div class="container">
         <div class="left-image">
-            <img src="{left_image}" alt="Left Image">
+            <img src="https://drive.google.com/uc?export=view&id=1j5yc-7iV2vyhXlBx14JIkkjhiOq1VaoV" alt="Left Image">
         </div>
         
         <div class="content">
@@ -208,8 +210,8 @@ hr {{
             <!-- Add the rest of your content here as needed -->
         </div>
         
-        <div class="right-image">
-            <img src="{right_image}" alt="Right Image">
+             <div class="right-image">
+            <img src="https://drive.google.com/uc?export=view&id=1dtD14envEdUmWOKaYA-lhREhdgsyc7S-" alt="Right Image">
         </div>
     </div>
     

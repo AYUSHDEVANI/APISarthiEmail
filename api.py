@@ -198,10 +198,7 @@ hr {{
         <img src="https://drive.google.com/uc?export=view&id=1CeaLTOj4EELiB_3koY6mIZKmKQieBYRB" alt="Header Image">
     </div>
 
-    # <div class="container">
-    #     <div class="left-image">
-    #         <img src="https://drive.google.com/uc?export=view&id=1j5yc-7iV2vyhXlBx14JIkkjhiOq1VaoV" alt="Left Image">
-    #     </div>
+ 
         
         
             <h1><strong>CONTRACT FARMING AGREEMENT</strong></h1>
@@ -213,10 +210,8 @@ hr {{
             <!-- Add the rest of your content here as needed -->
     
         
-        # <div class="right-image">
-        #     <img src="https://drive.google.com/uc?export=view&id=1dtD14envEdUmWOKaYA-lhREhdgsyc7S-" alt="Right Image">
-        # </div>
-    </div>
+
+    
     
     <br><br>
     <p><strong>CONTRACT FARMING AGREEMENT</strong></p>
