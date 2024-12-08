@@ -1,4 +1,4 @@
 Flask
 # pdfkit==1.0.0
-smtplib
+secure-smtplib
 weasyprint
