@@ -194,10 +194,10 @@ hr {{
                 <li><strong>1.2 Start Date:</strong> The agreement shall commence on {contract_data['start_date']}.</li>
                 <li><strong>1.3 End Date:</strong> The agreement shall end on {contract_data['end_date']} unless terminated earlier in accordance with the terms outlined herein.</li>
                 <li><strong>1.4 Contract Type:</strong></li>
-                <ul>
-                    <li>The Contractor acts as the Sponsor, providing technical support as well as resources such as seeds, fertilizer, etc.</li>
-                    <li>The Farmer retains full responsibility for resources and production.</li>
-                </ul>
+                <ol>
+                    <li><b>Centralized Model:</b> The Contractor acts as the Sponsor, providing technical support as well as resources such as seeds, fertilizer, etc.</li>
+                    <li><b>Informal Model:<b> The Farmer retains full responsibility for resources and production.</li>
+                </ol>
                 <li><strong>1.5 Sponsorship Clause</strong></li>
                 <ul>
                     <li>➣ If the buyer is sponsoring:</li>
@@ -300,11 +300,13 @@ hr {{
                 </ul>
                 <li><strong>5.3 Market Price Clause:</strong></li>
                 <ul>
-                    <li>If the farmer receives a market price exceeding {contract_data['market_price_multiplier']} times the agreed price for the produce, the farmer shall have the right to sell the produce in the open market.</li>
+                    <li>If the farmer receives a APMC rate {contract_data['market_price_multiplier']} times or more of the agreed price for the produce, the farmer shall have the right to sell the produce in the APMC market.</li>
+                    <li>The farmer can only check the price difference with its district’s APMC. If the district APMC is giving more price he can opt for it with checking the above'conditions.</li>
                     <li>In such a case, the sponsor may retain the agreement by paying the farmer an amount equal to {contract_data['retention_percentage']} times the difference between the agreed price and the higher market price.</li>
-                    <li><strong>Example:</strong> If the agreed amount is ₹100 and the market price is ₹150, the sponsor must pay ₹{contract_data['retention_amount']} (0.5 times the difference) extra, making the new total ₹{contract_data['new_total_price']}, to retain the contract. The farmer must sell the produce to the sponsor if this price is paid.</li>
-                    <li>If the farmer chooses to sell the produce in the market at double the agreed price, the farmer is obligated to return the invested amount by the sponsor (e.g., input costs, support, logistics), any advance payment received from the sponsor, along with {contract_data['additional_profit_percentage']}% of the additional profit earned.</li>
-                    <li><strong>Example:</strong> If the agreed amount is ₹100 and the market price is ₹200, the farmer must pay back the sponsor's investment and ₹{contract_data['additional_payment']} (25% of ₹100 additional profit).</li>
+                    <li><strong>Example:</strong> If the agreed amount is 100Rs. The APMC market is giving 150Rs. The sponsor has to give ₹{contract_data['retention_amount']} (0.5 times the difference) extra of the agreed amount that is 125Rs to keep the contract alive and the farmer have to sell it to the sponsor only if he is getting 125rs.</li>
+                    <li>If the farmer chooses to sell the produce in the APMC market at more than the agreed price, the farmer is obligated to return the invested amount by the sponsor (e.g., input costs, support, logistics) , any advance payment received from the sponsor along with that the farmer must have to give {contract_data['additional_profit_percentage']}% of the additional profit earned.</li>
+                    <li><strong>Example:</strong> If the agreed amount is 100Rs. The APMC is giving 150Rs. The farmer sold at market price that is 150rs. NOW, The farmer has to give ₹{contract_data['additional_payment']} (25% of the additional profit difference) that is 25% of 50rs (additional profit) extra of the agreed amount that is 12.5Rs along with the investment cost (e.g., input costs, support, logistics) and advanced'(if'received).</li>
+
                 </ul>
 
                 <li><strong>5.4 Late Payment Penalties:</strong></li>
@@ -454,7 +456,7 @@ hr {{
                 <li>Any structures or modifications made during the contract period must be removed or restored to their original state upon termination of the agreement.</li>
                 <li>If the Sponsor fails to remove such structures, ownership of these structures will automatically transfer to the farmer at no additional cost.</li>
             </p>
-            <p>This clause is intended to protect the farmer’s property rights and ensure that their land remains under their control throughout and after the agreement period.</p>
+            <p>This clause is intended to protect the farmer’s property rights and ensure that their land remains under their control throughout and after the agreement'period.</p>
 
             <p class="clause-title">10. Amendments and Termination</p>
             <ul>
