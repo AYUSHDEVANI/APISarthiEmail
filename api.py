@@ -11,9 +11,9 @@ from weasyprint import HTML
 
 app = Flask(__name__)
 
-stamp_image = "Images\left-image.png"
-left_image = "Images/left-image.png"
-right_image = "Images/right-image.png"
+# stamp_image = "Images\left-image.png"
+# left_image = "Images/left-image.png"
+# right_image = "Images/right-image.png"
 
 # Function to generate the contract as a PDF
 def generate_contract_pdf(contract_data, output_path):
@@ -152,12 +152,12 @@ hr {{
 <body>
        <!-- Add the header image at the start -->
     <div class="header-image">
-        <img src="{stamp_image}" alt="Header Image">
+        <img src="stamp.jpg" alt="Header Image">
     </div>
 
     <div class="container">
         <div class="left-image">
-            <img src="{left_image}" alt="Left Image">
+            <img src="left-image.png" alt="Left Image">
         </div>
         
         <div class="content">
@@ -171,7 +171,7 @@ hr {{
         </div>
         
         <div class="right-image">
-            <img src="{right_image}" alt="Right Image">
+            <img src="right-image.png" alt="Right Image">
         </div>
     </div>
     
