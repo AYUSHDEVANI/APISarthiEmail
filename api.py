@@ -152,12 +152,12 @@ hr {{
 <body>
        <!-- Add the header image at the start -->
     <div class="header-image">
-        <img src="https://drive.google.com/uc?export=view&id=1dtD14envEdUmWOKaYA-lhREhdgsyc7S-" alt="Header Image">
+        <img src="https://drive.google.com/uc?export=view&id=1CeaLTOj4EELiB_3koY6mIZKmKQieBYRB" alt="Header Image">
     </div>
 
     <div class="container">
         <div class="left-image">
-            <img src="{{Images/left-image.png}}" alt="Left Image">
+            <img src="https://drive.google.com/uc?export=view&id=1j5yc-7iV2vyhXlBx14JIkkjhiOq1VaoV" alt="Left Image">
         </div>
         
         <div class="content">
@@ -171,7 +171,7 @@ hr {{
         </div>
         
         <div class="right-image">
-            <img src="Images/right-image.png" alt="Right Image">
+            <img src="https://drive.google.com/uc?export=view&id=1dtD14envEdUmWOKaYA-lhREhdgsyc7S-" alt="Right Image">
         </div>
     </div>
     
