@@ -27,7 +27,50 @@ body {{
     padding: 12px;
 }}
 
-h1, h2, p {{
+/* Header Image Styling */
+.header-image img {{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}}
+
+.container {{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}}
+
+.left-image, .right-image {{
+    width: 30%;
+    height: auto;
+}}
+
+.left-image img, .right-image img {{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}}
+
+/* Responsive Design: Stack images vertically on smaller screens */
+@media screen and (max-width: 768px) {{
+    .container {{
+        flex-direction: column; /* Stack the content vertically */
+    }}
+
+    .left-image, .right-image {{
+        width: 80%; 
+        margin-bottom: 20px;
+    }}
+
+    .content {{
+        width: 80%;
+    }}
+}}
+
+h1, h2, h3, p {{
     color: #333;
     margin: 0;
 }}
@@ -40,7 +83,7 @@ h1 {{
     color: #0056b3;
 }}
 
-h2 {{
+h2, h3 {{
     font-size: 24px;
     text-align: center;
     margin: 20px 0;
@@ -142,19 +185,38 @@ hr {{
     </style>
 </head>
 <body>
-    <h1><strong>CONTRACT FARMING AGREEMENT</strong></h1>
-    <h2>Contract ID: {contract_data["contract_id"]}</h2>
-    <h2><strong>between</strong></h2>
-    <h2><strong>{contract_data["buyer_name"]}</strong></h2>
-    <h2><strong>And</strong></h2>
-    <h2><strong>{contract_data["seller_name"]}</strong></h2>
+
+    <!-- Add the header image at the start -->
+    <div class="header-image">
+        <img src="stamp.jpg" alt="Header Image">
+    </div>
+
+    <div class="container">
+        <div class="left-image">
+            <img src="left-image.png" alt="Left Image">
+        </div>
+        
+        <div class="content">
+            <h1><strong>CONTRACT FARMING AGREEMENT</strong></h1>
+            <h3>Contract ID: {contract_data["contract_id"]}</h3>
+            <h2><strong>Between</strong></h2>
+            <h2><strong>{contract_data["buyer_name"]}</strong></h2>
+            <h2><strong>And</strong></h2>
+            <h2><strong>{contract_data["seller_name"]}</strong></h2>
+            <!-- Add the rest of your content here as needed -->
+        </div>
+        
+        <div class="right-image">
+            <img src="right-image.png" alt="Right Image">
+        </div>
+    </div>
     
     <br><br>
     <p><strong>CONTRACT FARMING AGREEMENT</strong></p>
     <p>between</p>
-    <p>{contract_data["seller_name"]} [hereafter called ‘the Farmer`]</p>
+    <p>{contract_data["seller_name"]} [hereafter called 'the Farmer']</p>
     <p>and</p>
-    <p>{contract_data["buyer_name"]} having a place of business at {contract_data["buyer_address"]} [hereafter called ‘the Contractor`]</p>
+    <p>{contract_data["buyer_name"]} having a place of business at {contract_data["buyer_address"]} [hereafter called 'the Contractor']</p>
      <p class="clause-title">1. Contract Details</p>
             <ul>
                 <li><strong>1.1 Duration of agreement:</strong> {contract_data['agreement_duration']}</li>
@@ -259,7 +321,7 @@ hr {{
                 </ul>
                 <li><strong>5.2 Payment Process:</strong></li>
                 <ul>
-                    <li>To ensure their commitment, the Contractor must deposit {contract_data['deposit_percentage']}% of the total order value into the app`s in-app wallet at the time of placing the order. This deposit shall serve as a security for the Farmer and as an assurance of the Contractor`s intent to honor the agreement.</li>
+                    <li>To ensure their commitment, the Contractor must deposit {contract_data['deposit_percentage']}% of the total order value into the app's in-app wallet at the time of placing the order. This deposit shall serve as a security for the Farmer and as an assurance of the Contractor's intent to honor the agreement.</li>
                     <li>All payments under this agreement shall be processed through the in-app wallet provided by KrishiSarth Platform.</li>
                     <li>Upon placing the order, the remaining payment amount shall be frozen in the wallet as security for the Farmer.</li>
                     <li>Once the delivery of produce is confirmed by the Contractor, the payment shall be released to the Farmer, with a receipt provided to confirm the transaction.</li>
@@ -299,7 +361,7 @@ hr {{
         <li><strong>a. Force Majeure Before the Harvest</strong></li>
         <ul>
             <li><strong>Scenario:</strong> A drought or pest outbreak destroys the crop before it is ready for harvest.</li>
-            <li><strong>Farmer`s Payment:</strong></li>
+            <li><strong>Farmer's Payment:</strong></li>
             <ul>
                 <li>During the contract, it is advised for both parties to discuss and agree on a certain percent of payment for such cases.</li>
                 <li>If the agreement explicitly covers such cases (e.g., through an insurance clause), the farmer may receive compensation under an insurance policy.</li>
@@ -309,7 +371,7 @@ hr {{
         <li><strong>b. Force Majeure After Harvest but Before Delivery</strong></li>
         <ul>
             <li><strong>Scenario:</strong> The farmer successfully harvests the crop, but a flood prevents delivery or destroys the stored produce.</li>
-            <li><strong>Farmer`s Payment:</strong></li>
+            <li><strong>Farmer's Payment:</strong></li>
             <ul>
                 <li>During the contract, it is advised for both parties to discuss and agree on a certain percent of payment for such cases.</li>
                 <li>If the crop is insured, the insurance provider compensates the farmer for the loss.</li>
@@ -319,7 +381,7 @@ hr {{
         <li><strong>c. Partial Force Majeure</strong></li>
         <ul>
             <li><strong>Scenario:</strong> The event impacts only part of the crop (e.g., a locust attack destroys 50% of the field).</li>
-            <li><strong>Farmer`s Payment:</strong></li>
+            <li><strong>Farmer's Payment:</strong></li>
             <ul>
                 <li>During the contract, it is advised for both parties to discuss and agree on a certain percent of payment for such cases.</li>
                 <li>The farmer is paid for the undamaged portion of the crop delivered, based on the agreed price.</li>
