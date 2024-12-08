@@ -60,7 +60,7 @@ h1 {{
     color: #0056b3;
 }}
 
-h2 {{
+h2,h3 {{
     font-size: 24px;
     text-align: center;
     margin: 20px 0;
