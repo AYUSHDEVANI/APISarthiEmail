@@ -196,7 +196,7 @@ hr {{
                 <li><strong>1.4 Contract Type:</strong></li>
                 <ol>
                     <li><b>Centralized Model:</b> The Contractor acts as the Sponsor, providing technical support as well as resources such as seeds, fertilizer, etc.</li>
-                    <li><b>Informal Model:<b> The Farmer retains full responsibility for resources and production.</li>
+                    <li><b>Informal Model:</b> The Farmer retains full responsibility for resources and production.</li>
                 </ol>
                 <li><strong>1.5 Sponsorship Clause</strong></li>
                 <ul>
