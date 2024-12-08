@@ -11,7 +11,9 @@ from weasyprint import HTML
 
 app = Flask(__name__)
 
-
+stamp_image = "Images/stamp.jpg"
+left_image = "Images/left-image.png"
+right_image = "Images/right-image.png"
 
 # Function to generate the contract as a PDF
 def generate_contract_pdf(contract_data, output_path):
@@ -148,14 +150,30 @@ hr {{
     </style>
 </head>
 <body>
-    <h1><strong>CONTRACT FARMING AGREEMENT</strong></h1>
-    <h2><strong>Contract ID: {contract_data["contract_id"]}</strong></h2>    
+       <!-- Add the header image at the start -->
+    <div class="header-image">
+        <img src="{stamp_image}" alt="Header Image">
+    </div>
 
-
-    <h2><strong>between</strong></h2>
-    <h2><strong>{contract_data["buyer_name"]}</strong></h2>
-    <h2><strong>And</strong></h2>
-    <h2><strong>{contract_data["seller_name"]}</strong></h2>
+    <div class="container">
+        <div class="left-image">
+            <img src="{left_image}" alt="Left Image">
+        </div>
+        
+        <div class="content">
+            <h1><strong>CONTRACT FARMING AGREEMENT</strong></h1>
+            <h3>Contract ID: {contract_data["contract_id"]}</h3>
+            <h2><strong>Between</strong></h2>
+            <h2><strong>{contract_data["buyer_name"]}</strong></h2>
+            <h2><strong>And</strong></h2>
+            <h2><strong>{contract_data["seller_name"]}</strong></h2>
+            <!-- Add the rest of your content here as needed -->
+        </div>
+        
+        <div class="right-image">
+            <img src="{right_image}" alt="Right Image">
+        </div>
+    </div>
     
     <br><br>
     <p><strong>CONTRACT FARMING AGREEMENT</strong></p>

@@ -7,9 +7,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 from weasyprint import HTML
 
-stamp_image = "stamp.jpg"
-left_image = "left-image.png"
-right_image = "right-image.png"
+C
 
 # Function to generate the contract as a PDF
 def generate_contract_pdf(contract_data, output_path):
