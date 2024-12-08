@@ -2,3 +2,4 @@ Flask
 # pdfkit==1.0.0
 secure-smtplib
 weasyprint
+gunicorn

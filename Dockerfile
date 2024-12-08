@@ -31,4 +31,5 @@ EXPOSE 5000
 ENV PYTHONUNBUFFERED=1
 
 # Command to run the application
-CMD ["python", "api.py"]
+# CMD ["python", "api.py"]
+CMD ["gunicorn", "-w", "4", "api:app", "-b", "0.0.0.0:5000"]
