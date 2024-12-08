@@ -149,6 +149,9 @@ hr {{
 </head>
 <body>
     <h1><strong>CONTRACT FARMING AGREEMENT</strong></h1>
+    <h2><strong>Contract ID: {contract_data["contract_id"]}</strong></h2>    
+
+
     <h2><strong>between</strong></h2>
     <h2><strong>{contract_data["buyer_name"]}</strong></h2>
     <h2><strong>And</strong></h2>
